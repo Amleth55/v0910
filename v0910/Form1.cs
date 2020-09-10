@@ -12,8 +12,8 @@ namespace v0910
 {
     public partial class Form1 : Form
     {
-        int[] vx = new int[3];
-        int[] vy = new int[3];
+        int[] vx = new int[30];
+        int[] vy = new int[30];
         static Random rand = new Random();
         Label[] labels = new Label[30];
 
@@ -21,7 +21,7 @@ namespace v0910
         {
             InitializeComponent();
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 30; i++)
             {
                 vx[i] = rand.Next(-15, 16);
                 vy[i] = rand.Next(-15, 16);
